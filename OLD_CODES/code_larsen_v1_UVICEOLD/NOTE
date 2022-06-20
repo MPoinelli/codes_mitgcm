@@ -1,0 +1,9 @@
+This configuration is the same as code_larse but I added:
+
+in OBCS_OPTIONS.h
+define OBCS_UVICE_OLD
+define OBCS_SEAICE_AVOID_CONVERGENCE
+define OBCS_SEAICE_COMPUTE_UVICE
+
+based on this forum post:
+http://mailman.mitgcm.org/pipermail/mitgcm-support/2020-May/012513.html

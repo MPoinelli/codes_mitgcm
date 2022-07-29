@@ -4,16 +4,16 @@ Repositories with mitgcm codes
 
 Here the description of what I use these codes for:
 
-code_larsen_v5_68i_2 -> test 1, remove shelfice&ptracer from code_larsen_v5_68i
-code_larsen_v5_68i -> larsen code to be compiled on mitgcm_c68i
-code_larsen_v5_full_FAST  -> same as code_larsen_v5_full but with D. Kokron edit and nx=ny=20 (faster)
-code_larsen_v5 -> based on Nakayama2019, with the only addition of a seaice sponge layer.
-code_larsen_v5_full -> based on Nakayama2019, with the only addition of a seaice sponge layer.
-code_larsen_v4_Nakayama2019 -> based on Nakayama 2019 but with geometry v4
+        code_larsen_v5_68i_2 -> test 1, remove shelfice&ptracer from code_larsen_v5_68i
+        code_larsen_v5_68i -> larsen code to be compiled on mitgcm_c68i
+        code_larsen_v5_full_FAST  -> same as code_larsen_v5_full but with D. Kokron edit and nx=ny=20 (faster)
+        code_larsen_v5 -> based on Nakayama2019, with the only addition of a seaice sponge layer.
+        code_larsen_v5_full -> based on Nakayama2019, with the only addition of a seaice sponge layer.
+        code_larsen_v4_Nakayama2019 -> based on Nakayama 2019 but with geometry v4
 
-code_meltchannels -> meltchannels experiment of S Nanninga
+        code_meltchannels -> meltchannels experiment of S Nanninga
 
-code_rifts -> code used for rifts experiment, Poinelli 2022, JPO
+        code_rifts -> code used for rifts experiment, Poinelli 2022, JPO
 
 
 

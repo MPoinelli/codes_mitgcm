@@ -69,7 +69,7 @@ C     Initialize arrays in common blocks :
          ENDDO
          DO j=1-OLy,sNy+OLy
           DO i=1-OLx,sNx+OLx
-           surfaceForcingPTr(i,j,bi,bj,iTracer) =0. _d 0
+           surfaceForcingPTr(i,j,bi,bj,iTracer) = 0. _d 0
           ENDDO
          ENDDO
 
@@ -129,10 +129,9 @@ C     Apply mask
       ENDDO
 
 C Read from a pickup file if needed
-      IF ( nIter0.GT.PTRACERS_Iter0 ) then
-!      IF ( nIter0.GT.PTRACERS_Iter0 .OR.
-!     &    (nIter0.EQ.PTRACERS_Iter0 .AND. pickupSuff.NE.' ')
-!     &   ) THEN
+      IF ( nIter0.GT.PTRACERS_Iter0 .OR.
+     &    (nIter0.EQ.PTRACERS_Iter0 .AND. pickupSuff.NE.' ')
+     &   ) THEN
 
        CALL PTRACERS_READ_PICKUP( nIter0, myThid )
       ENDIF

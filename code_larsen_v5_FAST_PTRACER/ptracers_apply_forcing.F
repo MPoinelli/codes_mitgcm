@@ -81,21 +81,17 @@ C     because it is needed by KPP_TRANSPORT_PTR.
       ENDIF
 #endif /* ALLOW_GCHEM */
 
-
-!      write(6,*) 'vigan1=',k,'kSurface=',kSurface
-!      IF (k.EQ.kSurface) then  
-       
+!      IF (k.EQ.kSurface) then      
        IF (iTracer.EQ.1) then
-!         write(6,*) 'vigan2'
          DO j=jMin,jMax
           DO i=iMin,iMax
           gPtracer(i,j) = 
      &         + (1.0 - pTracer(i,j,k,bi,bj,iTracer))/3600 
-     &         * ForcingPTr3(i,j,k,bi,bj,iTracer)/1.
+     &         * ForcingPTr3(i,j,k,bi,bj,iTracer)/100.
      &         * recip_drF(k)*recip_hFacC(i,j,k,bi,bj)    
-!          write(6,*) 'vigan1', ptracer(i,j,k,bi,bj,iTracer)
-!          write(6,*) 'vigan2', ForcingPTr3(i,j,k,bi,bj,iTracer) 
-         ENDDO 
+!          write(*,*) ptracer(i,j,k,bi,bj,iTracer)
+!          write(*,*) ForcingPTr3(i,j,k,bi,bj,iTracer) 
+          ENDDO 
          ENDDO   
        ENDIF
 !      ENDIF
